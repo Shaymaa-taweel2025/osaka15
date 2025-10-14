@@ -46,7 +46,7 @@
         </li>
         
          <li class="nav-item">
-          <a class="nav-link" href="#">Cart</a>
+          <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartcanvas" aria-controls="offcanvasRight">Cart</a>
         </li>
 
       </ul>
@@ -55,6 +55,15 @@
   </div>
 </nav>
 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartcanvas" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
 
 
     <!--bootstrap 5.3-->

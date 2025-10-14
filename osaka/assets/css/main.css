@@ -1,0 +1,19 @@
+
+:root{
+
+    --maincolor:#fe3173;
+}
+
+
+body{
+
+
+    height: 5000px;
+}
+
+.navbar-brand{
+    color: white;
+}
+ .navbar-nav    .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--maincolor);
+}

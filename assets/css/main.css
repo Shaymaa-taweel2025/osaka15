@@ -1,0 +1,249 @@
+:root {
+
+    --maincolor: #ff206e;
+    --mainfonts: "Open Sans", sans-serif;
+}
+
+.text-main {
+    color: #ff206e;
+}
+
+
+body {
+
+    font-family: var(--mainfonts);
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.projects img {
+    width: 100%;
+}
+
+
+
+.about span {
+    font-weight: 600;
+    color: #000;
+    text-decoration: underline;
+}
+
+.testimonials img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonials h3 {
+    color: grey;
+    font-size: .75rem;
+}
+
+.testimonials .carousel-indicators {
+
+    bottom: -50px;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #dbdbdb;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--maincolor);
+}
+
+.projects .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: var(--maincolor);
+}
+
+a {
+    text-decoration: none;
+    color: var(--maincolor);
+}
+
+.hero {
+    background-image: url("./../img/projects/hero-img.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    font-size: 20px;
+
+
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #4b4949;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.icons:hover {
+    border-color: white;
+}
+
+.animate-left {
+    transform: translateX(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.animate-right {
+    transform: translateX(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideinright {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-left {
+    animation-name: slideinleft;
+    animation-duration: 2s;
+
+
+}
+
+.animate-right {
+    animation-name: slideinright;
+    animation-duration: 2s;
+    animation-delay: .3s;
+
+
+}
+
+.contact {
+    background-image: url("./../img/projects/dark_dot.jpg");
+}
+
+.contact .form-control{
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contact .form-control::placeholder{
+    color: #eee;
+}
+
+.contact .form-control:focus{
+   box-shadow: none;
+    border-bottom: 1px solid var(--maincolor);
+}
+
+
+
+form button{
+    margin-top: 15px;
+   
+}
+.contact h3{
+    color: var(--maincolor);
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+.contact h2 ,p{
+    margin-bottom: 20px;
+}
+
+.services{
+    background-image:url(./../img/) ;
+}
+
+.services .service-contant h3{
+    position: relative;
+}
+
+.services .service-contant p{
+    margin-top: 40px;
+}
+
+.services .service-contant h2:after{
+    content:'';
+    display: block;
+   position: absolute;
+    top: 95px;
+    left:150px;
+    color: #ff206e;
+    background-color: var(--maincolor);
+    width: 30%;
+    height: 2px;
+ 
+}
+
+
+
+
+
+.service-icon{
+    height: 60px;
+    width: 60px;
+}
+
+.service-card svg path{
+ transition:fill .5s;
+}
+
+.service-card:hover .service-icon svg path{
+    fill:var(--maincolor);
+   
+}
+.products img{
+    width: 50%;
+}
+
+.carousel-indicators {
+    bottom: -62px;
+}
+
+.products .carousel-indicators .active{
+background-color: var(--maincolor);
+}

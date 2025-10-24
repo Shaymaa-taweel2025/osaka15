@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar z-1 navbar-expand-lg  navbar-dark bg-black position-sticky top-0  w-100 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">OSAKA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartcanvas"
+                            aria-controls="offcanvasRight">Cart</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="hero vh-100 ">
+            <div class="container">
+                <div class="hero-content text-white d-flex flex-column justify-content-center h-100  ">
+                    <h1>ROBIN STEEL</h1>
+                    <p>Developer, Graphics & Web Design</p>
+                    <a href="#">View Portfolio</a>
+
+                </div>
+                <div class="social d-flex gap-4 py-5 text-white ">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icons ">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="about py-5 text-center ">
+            <h2 class="fw-bold text-uppercase fs-1 ">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="container mt-5 text-start ">
+                <div class="row align-items-center">
+                    <div class="col-md-4 animate-left">
+                        <img src="./assets/img/projects/about/about-img.jpg" class="img-fluid" />
+                    </div>
+                    <div class="col-md-7 offset-md-1 animate-right ">
+                        <h3 class="fw-600">Robin Steel</h3>
+                        <p class="text-main fw-bold ">Creative UI/UX Designer, Developer.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>E-mail :<span>info@yourdomain.com</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="testimonials py-5 text-center">
+            <h2 class="fs-1 fw-bold text-uppercase">Testimonials</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial">
+                                <img src="./assets/img/projects/first man.jpg" class="rounded-circle img-thumbnail">
+                                <h2 class="fs-5">Adrian Hasson</h2>
+                                <h3 class="fs-6">Graphic Designer</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet
+                                    sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                    elit. Sed sit amet tellus magna.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial d-flex flex-column g-3 align-items-center">
+                                <img src="./assets/img/projects/second.jpg" class="rounded-circle img-thumbnail" />
+                                <h2 class="fs-5">Olivia Nealon</h2>
+                                <h3 class="fs-6">Web Developer</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet
+                                    sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                    elit. Sed sit amet tellus magna.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <img src="./assets/img/projects/3.third jpg" class="rounded-circle img-thumbnail">
+                                <h2 class="fs-5">Robin Perty</h2>
+                                <h3 class="fs-6">Web Developer</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget est sit amet
+                                    sapien congue tristique. Integer mollis auctor ultrices. Praesent vitae dapibus
+                                    elit. Sed sit amet tellus magna.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <section class="products bg-dark">
+  <div class="container">
+    <div id="carouselExampleIndicators2" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+       <div class="col-md-4">
+        <img src="./assets/img/projects/man1.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/2.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/3.jpg">
+       </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+       <div class="row">
+       <div class="col-md-4">
+        <img src="./assets/img/projects/man1.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/2.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/3.jpg">
+       </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row">
+       <div class="col-md-4">
+        <img src="./assets/img/projects/man1.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/2.jpg">
+       </div>
+        <div class="col-md-4">
+        <img src="./assets/img/projects/3.jpg">
+       </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+   
+        </section>
+
+        <section class="projects py-5">
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">all</button>
+                    <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web"
+                        type="button" role="tab" aria-controls="nav-web" aria-selected="false">web</button>
+                    <button class="nav-link" id="nav-mobil-tab" data-bs-toggle="tab" data-bs-target="#nav-mobil"
+                        type="button" role="tab" aria-controls="nav-mobil" aria-selected="false">mobile</button>
+
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane mt-5 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <img src="./assets/img/projects/man1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the cards content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <img src="./assets/img/projects/2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the cards content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <img src="./assets/img/projects/3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the cards content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab" tabindex="0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <img src="./assets/img/projects/man1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the cards content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="card">
+                                    <img src="./assets/img/projects/2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the cards content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-mobil" role="tabpanel" aria-labelledby="nav-mobil-tab" tabindex="0">
+
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-4">
+                            <div class="card">
+                                <img src="./assets/img/projects/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up the bulk of the cards content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="contact py-5 text-center text-white ">
+            <h2 class="fs-1 fw-bold text-uppercase">Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="d-flex flex-column g-3 align-items-start ">
+                            <input class="form-control bg-transparent rounded-0 " placeholder="Name*">
+                            <input class=" form-control bg-transparent rounded-0  " placeholder="Email*" />
+                            <textarea class="form-control bg-transparent rounded-0 " placeholder="Message*"></textarea>
+                            <button type="submit btn btn-white ">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 offset-md-1 text-start">
+                        <div class="my-2 ">
+                            <h3>phone</h3>
+                            <span>+38(098) 333-55-88</span>
+                        </div>
+                        <div class="my-2">
+                            <h3>location</h3>
+                            <span>Kiev, st. Holoseyevskaya 88</span>
+                        </div>
+                        <div class="my-2">
+                            <h3>Email</h3>
+                            <span>info@yourdomain.com</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services text-center py-5">
+            <h2 class="fs-1 fw-bold text-uppercase">Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Branding</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Marketing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Web Design</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Responsive</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Development</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class=" card service-card shadow-lg p-5 position-relative align-items-center">
+                            <div class="service-icon bg-dark rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                    viewBox="0 0 576 512"> 
+                                    <path fill="#ffffff"
+                                        d="M288 64a32 32 0 1 0 0 64 32 32 0 1 0 0-64zM192 96c0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5l0 257.9c62.9-14.3 110.2-69.7 111.9-136.5l-16.1 14.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3L496 307.9C493.9 421 401.6 512 288 512S82.1 421 80 307.9L63.8 322.1c-10 8.7-25.1 7.7-33.9-2.3s-7.7-25.1 2.3-33.9l64-56c9-7.9 22.6-7.9 31.6 0l64 56c10 8.7 11 23.9 2.3 33.9s-23.9 11-33.9 2.3l-16.1-14.1c1.8 66.8 49.1 122.2 111.9 136.5l0-257.9c-37.3-13.2-64-48.7-64-90.5z" />
+                                </svg>
+                            </div>
+                            <div class="service-contant">
+                                <h2>Support</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magni accusamus necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartcanvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+
+
+    <!--bootstrap 5.3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
